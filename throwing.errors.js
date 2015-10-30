@@ -23,7 +23,7 @@ promise.then(successFn)
        .then(function(result) {
            var product = result * 10;
            console.log('Multiplied by 10: ', product);
-           throw new Error("Shit's broken.");
+           throw new Error("Everything's on fire.");
        })
        .then(successMultiply)
        .then(successMultiply)
