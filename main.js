@@ -1,5 +1,3 @@
-// initial example
-
 var ourResult = true;
 
 var promise = new Promise(function(resolve, reject) {
@@ -7,7 +5,7 @@ var promise = new Promise(function(resolve, reject) {
     else { reject(':('); }
 });
 
-// promise.then(function(result) {
+// promise.then(function(result) {      // initial example
 //     console.log('Result: ', result);
 // }).catch(function(error) {
 //     console.log('Error: ', error);
@@ -32,5 +30,5 @@ function successFn(message) {
 }
 function errorFn(message) { console.log('Error: ', message); }
 
-promise.then(successFn, errorFn)
+promise.then(successFn, errorFn)    // you can chain your thens
        .then(successFn, errorFn);
